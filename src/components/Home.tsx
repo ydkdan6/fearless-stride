@@ -63,8 +63,7 @@ const Home: React.FC = () => {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.6 }}
             >
-              Supporting internationally educated nurses and immigrant women in their journey to professional success and personal fulfillment.
-            </motion.p>
+Connecting You to Your Future: Mentorship & Well-being, Digitally Delivered.            </motion.p>
 
             <motion.div
               className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start mb-12"

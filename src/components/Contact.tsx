@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import { useInView } from 'framer-motion';
 import { useRef } from 'react';
-import { Mail, Phone, MapPin, Send, Clock } from 'lucide-react';
+import { Mail, Phone, MapPin, Send, Clock, Facebook, Twitter, Instagram, Linkedin } from 'lucide-react';
 
 const Contact: React.FC = () => {
   const ref = useRef(null);
@@ -24,34 +24,96 @@ const Contact: React.FC = () => {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    // Handle form submission here
-    console.log('Form submitted:', formData);
+    
+    // Create email body with form details
+    const emailBody = `
+Hello Fearless Strides Team,
+
+I hope this message finds you well. I'm reaching out regarding ${formData.subject || 'general inquiry'}.
+
+Contact Details:
+Name: ${formData.name}
+Email: ${formData.email}
+Phone: ${formData.phone || 'Not provided'}
+
+Message:
+${formData.message}
+
+Thank you for your time and I look forward to hearing from you soon.
+
+Best regards,
+${formData.name}
+    `.trim();
+
+    // Create mailto URL
+    const mailtoUrl = `mailto:hello@fearlessstrides.com?subject=${encodeURIComponent(formData.subject || 'Contact Form Submission')}&body=${encodeURIComponent(emailBody)}`;
+    
+    // Open email client
+    window.location.href = mailtoUrl;
+    
+    // Optional: Reset form after submission
+    setTimeout(() => {
+      setFormData({
+        name: '',
+        email: '',
+        phone: '',
+        subject: '',
+        message: ''
+      });
+    }, 1000);
   };
 
   const contactInfo = [
     {
       icon: Mail,
       title: 'Email Us',
-      info: 'hello@mentorher.com',
+      info: 'hello@fearlessstrides.com',
       description: 'Send us a message anytime'
     },
     {
       icon: Phone,
       title: 'Call Us',
-      info: '+1 (555) 123-4567',
+      info: '403 702 4498',
       description: 'Mon-Fri 9AM-6PM EST'
     },
     {
       icon: MapPin,
       title: 'Visit Us',
-      info: '123 Mentorship Ave, Suite 100',
-      description: 'Toronto, ON M5V 3A1'
+      info: '141 Evansdale Landing NW',
+      description: 'Calgary, AB T3P0C7'
     },
     {
       icon: Clock,
       title: 'Office Hours',
       info: 'Mon-Fri: 9AM-6PM',
       description: 'Weekend by appointment'
+    }
+  ];
+
+  const socialLinks = [
+    {
+      icon: Facebook,
+      name: 'Facebook',
+      url: 'https://web.facebook.com/fearlessstrides/?_rdc=1&_rdr#',
+      color: 'hover:text-blue-600'
+    },
+    {
+      icon: Twitter,
+      name: 'Twitter',
+      url: '#',
+      color: 'hover:text-blue-400'
+    },
+    {
+      icon: Instagram,
+      name: 'Instagram',
+      url: '#',
+      color: 'hover:text-pink-500'
+    },
+    {
+      icon: Linkedin,
+      name: 'LinkedIn',
+      url: '#',
+      color: 'hover:text-blue-700'
     }
   ];
 
@@ -93,7 +155,7 @@ const Contact: React.FC = () => {
             transition={{ duration: 0.8, delay: 0.2 }}
           >
             <h3 className="text-2xl font-bold text-primary mb-6">Send us a Message</h3>
-            <form onSubmit={handleSubmit} className="space-y-6">
+            <div className="space-y-6">
               <div className="grid md:grid-cols-2 gap-6">
                 <div>
                   <label htmlFor="name" className="block text-sm font-semibold text-primary mb-2">
@@ -181,7 +243,7 @@ const Contact: React.FC = () => {
               </div>
 
               <motion.button
-                type="submit"
+                onClick={handleSubmit}
                 className="w-full bg-secondary hover:bg-secondary-light text-white px-8 py-4 rounded-lg font-semibold text-lg flex items-center justify-center space-x-2 transition-all duration-300 transform hover:scale-105"
                 whileHover={{ scale: 1.02 }}
                 whileTap={{ scale: 0.98 }}
@@ -189,7 +251,7 @@ const Contact: React.FC = () => {
                 <Send className="w-5 h-5" />
                 <span>Send Message</span>
               </motion.button>
-            </form>
+            </div>
           </motion.div>
 
           {/* Contact Information */}
@@ -230,12 +292,40 @@ const Contact: React.FC = () => {
               ))}
             </div>
 
+            {/* Social Media Links */}
+            <motion.div
+              className="bg-cream/10 backdrop-blur-sm rounded-xl p-6 border border-cream/20"
+              initial={{ opacity: 0, y: 30 }}
+              animate={isInView ? { opacity: 1, y: 0 } : {}}
+              transition={{ duration: 0.6, delay: 1.0 }}
+            >
+              <h4 className="text-lg font-semibold text-cream mb-4">Follow Us</h4>
+              <div className="flex space-x-4">
+                {socialLinks.map((social, index) => (
+                  <motion.a
+                    key={social.name}
+                    href={social.url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className={`w-12 h-12 bg-cream/20 hover:bg-cream/30 rounded-full flex items-center justify-center text-cream ${social.color} transition-all duration-300 hover:scale-110`}
+                    initial={{ opacity: 0, scale: 0 }}
+                    animate={isInView ? { opacity: 1, scale: 1 } : {}}
+                    transition={{ duration: 0.4, delay: 1.2 + index * 0.1 }}
+                    whileHover={{ scale: 1.1 }}
+                    whileTap={{ scale: 0.95 }}
+                  >
+                    <social.icon className="w-6 h-6" />
+                  </motion.a>
+                ))}
+              </div>
+            </motion.div>
+
             {/* Emergency Support Note */}
             <motion.div
               className="bg-secondary/20 border border-secondary/30 rounded-xl p-6 mt-8"
               initial={{ opacity: 0, y: 20 }}
               animate={isInView ? { opacity: 1, y: 0 } : {}}
-              transition={{ duration: 0.6, delay: 1.0 }}
+              transition={{ duration: 0.6, delay: 1.4 }}
             >
               <h4 className="text-cream font-semibold mb-2">Need Immediate Support?</h4>
               <p className="text-cream/90 text-sm leading-relaxed">

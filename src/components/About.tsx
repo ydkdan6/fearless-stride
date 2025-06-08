@@ -41,7 +41,7 @@ const About: React.FC = () => {
           transition={{ duration: 0.8 }}
         >
           <h2 className="text-4xl md:text-5xl font-bold text-primary mb-6">About Our Mission</h2>
-          <p className="text-xl text-primary/80 max-w-3xl mx-auto">
+          <p className="text-xl text-justify text-primary/80 max-w-3xl mx-auto">
             At Fearless Strides, our mission is to empower immigrant women and internationally educated
              nurses (IENs) to confidently build thriving lives and careers. 
              We provide expert mentorship that bridges cultural gaps and accelerates professional integration, 

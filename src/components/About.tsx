@@ -42,8 +42,13 @@ const About: React.FC = () => {
         >
           <h2 className="text-4xl md:text-5xl font-bold text-primary mb-6">About Our Mission</h2>
           <p className="text-xl text-primary/80 max-w-3xl mx-auto">
-            We are dedicated to empowering immigrant women and internationally educated nurses 
-            to achieve their professional dreams and build fulfilling careers.
+            At Fearless Strides, our mission is to empower immigrant women and internationally educated
+             nurses (IENs) to confidently build thriving lives and careers. 
+             We provide expert mentorship that bridges cultural gaps and accelerates professional integration, 
+             complemented by compassionate grief support and accessible digital health solutions 
+             for holistic well-being. We are dedicated to being a trusted partner where every client 
+             feels truly seen, heard,
+             and supported, finding renewed hope and strength to achieve their fullest potential.
           </p>
         </motion.div>
 

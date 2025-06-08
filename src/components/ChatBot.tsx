@@ -76,7 +76,9 @@ const ChatBot: React.FC = () => {
         `${msg.isUser ? 'User' : 'Assistant'}: ${msg.text}`
       ).join('\n');
 
-      const prompt = `You are a gentle and compassionate grief support assistant. You listen empathetically, validate emotions, and offer comforting responses. You are not a licensed therapist and should avoid giving medical advice.
+      const prompt = `You are a gentle and compassionate grief support assistant.
+       You listen empathetically, validate emotions, and offer comforting responses. 
+       You are not a licensed therapist and should avoid giving medical advice.
 
 Guidelines:
 - Be warm, empathetic, and understanding

@@ -20,8 +20,8 @@ const Blog: React.FC = () => {
   const blogPosts = [
     {
       id: 'featured-nurse-credentials-2024',
-      title: 'AI & The Future of Nursing;  Let’s Talk About Algorithmic BiasBreaking Through Barriers: Your Complete Guide to Nursing Credential Recognition',
-      excerpt: 'From documentation to licensure exams, discover the step-by-step process that helped over 2,000 international nurses successfully transition to practice in North America.',
+      title: 'AI & The Future of Nursing;  Let’s Talk About Algorithmic Bias',
+      excerpt: 'Artificial intelligence detects patterns in historical data to improve its understanding. However, if that data fails to adequately reflect certain cultures, skin colors, genders, or social contexts, the algorithms might unintentionally perpetuate existing health disparities instead of mitigating them. This is precisely why frontline nurses, who witness and document the day‑to‑day realities of diverse patients, must be involved in curating, labelling, and auditing those datasets from the start...',
       content: `
         <h2>AI & The Future of Nursing;  Let’s Talk About Algorithmic Bias</h2>
         <p>Artificial intelligence detects patterns in historical data to improve its understanding. However, if that data fails to adequately reflect certain cultures, skin colors, genders, or social contexts, the algorithms might unintentionally perpetuate existing health disparities instead of mitigating them. This is precisely why frontline nurses, who witness and document the day‑to‑day realities of diverse patients, must be involved in curating, labelling, and auditing those datasets from the start.</br>

@@ -119,7 +119,7 @@ const WhatWeDo: React.FC = () => {
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
               >
-                Schedule Your Consultation
+                <a href="https://wa.me/+14037024498" className='decoration-none'>Schedule Your Consultation</a>
               </motion.button>
             </div>
           </div>

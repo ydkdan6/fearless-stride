@@ -117,7 +117,7 @@ const FAQ: React.FC = () => {
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
           >
-            Contact Us
+                <a href="https://wa.me/+14037024498" className='decoration-none'>Contact Us</a>
           </motion.button>
         </motion.div>
       </div>

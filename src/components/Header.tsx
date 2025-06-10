@@ -23,7 +23,7 @@ const Header: React.FC = () => {
     // Add a small delay before closing mobile menu to ensure scroll completes
     setTimeout(() => {
       setIsMenuOpen(false);
-    }, 300);
+    }, 600);
   };
 
   const navItems = [

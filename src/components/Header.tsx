@@ -20,7 +20,10 @@ const Header: React.FC = () => {
     if (element) {
       element.scrollIntoView({ behavior: 'smooth' });
     }
-    setIsMenuOpen(false);
+    // Add a small delay before closing mobile menu to ensure scroll completes
+    setTimeout(() => {
+      setIsMenuOpen(false);
+    }, 300);
   };
 
   const navItems = [

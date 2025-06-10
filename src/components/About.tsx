@@ -1,12 +1,10 @@
-import React from 'react';
-import { motion } from 'framer-motion';
-import { useInView } from 'framer-motion';
-import { useRef } from 'react';
+import React, { useRef } from 'react';
+import { motion, useInView } from 'framer-motion';
 import { Award, Globe, Heart, Users } from 'lucide-react';
 
 const About: React.FC = () => {
   const ref = useRef(null);
-  const isInView = useInView(ref, { once: true, amount: 0.3 });
+  const isInView = useInView(ref, { once: true, amount: 0.1 });
 
   const values = [
     {
@@ -32,12 +30,12 @@ const About: React.FC = () => {
   ];
 
   return (
-    <section id="about" className="py-20 bg-cream" ref={ref}>
-      <div className="container mx-auto px-4">
+    <section id="about" className="py-20 bg-cream w-full" ref={ref}>
+      <div className="w-full max-w-7xl mx-auto px-4">
         <motion.div
           className="text-center mb-16"
           initial={{ opacity: 0, y: 30 }}
-          animate={isInView ? { opacity: 1, y: 0 } : {}}
+          animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 30 }}
           transition={{ duration: 0.8 }}
         >
           <h2 className="text-4xl md:text-5xl font-bold text-primary mb-6">About Our Mission</h2>
@@ -48,14 +46,14 @@ const About: React.FC = () => {
              complemented by compassionate grief support and accessible digital health solutions 
              for holistic well-being. We are dedicated to being a trusted partner where every client 
              feels truly seen, heard,
-             and supported, finding renewed hope and strength to achieve their fullest potential.
+             and supported, finding renewed hope and strength to achieve their fullest potential.
           </p>
         </motion.div>
 
         <div className="grid lg:grid-cols-2 gap-16 items-center mb-20">
           <motion.div
             initial={{ opacity: 0, x: -50 }}
-            animate={isInView ? { opacity: 1, x: 0 } : {}}
+            animate={isInView ? { opacity: 1, x: 0 } : { opacity: 0, x: -50 }}
             transition={{ duration: 0.8, delay: 0.2 }}
           >
             <div className="relative">
@@ -74,7 +72,7 @@ const About: React.FC = () => {
           <motion.div
             className="space-y-6"
             initial={{ opacity: 0, x: 50 }}
-            animate={isInView ? { opacity: 1, x: 0 } : {}}
+            animate={isInView ? { opacity: 1, x: 0 } : { opacity: 0, x: 50 }}
             transition={{ duration: 0.8, delay: 0.4 }}
           >
             <h3 className="text-3xl font-bold text-primary mb-6">
@@ -106,7 +104,7 @@ const About: React.FC = () => {
         <motion.div
           className="grid md:grid-cols-2 lg:grid-cols-4 gap-8"
           initial={{ opacity: 0, y: 50 }}
-          animate={isInView ? { opacity: 1, y: 0 } : {}}
+          animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 50 }}
           transition={{ duration: 0.8, delay: 0.6 }}
         >
           {values.map((value, index) => (
@@ -114,7 +112,7 @@ const About: React.FC = () => {
               key={value.title}
               className="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 text-center group hover:scale-105"
               initial={{ opacity: 0, y: 30 }}
-              animate={isInView ? { opacity: 1, y: 0 } : {}}
+              animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 30 }}
               transition={{ duration: 0.6, delay: 0.8 + index * 0.1 }}
             >
               <div className="w-16 h-16 bg-secondary/10 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:bg-secondary/20 transition-colors duration-300">

@@ -17,7 +17,7 @@ function MainPage() {
   return (
     <div className="min-h-screen bg-cream">
       <Header />
-      <main>
+      <main className="w-full">
         <Home />
         <About />
         <WhatWeDo />

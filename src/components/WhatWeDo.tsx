@@ -1,12 +1,10 @@
-import React from 'react';
-import { motion } from 'framer-motion';
-import { useInView } from 'framer-motion';
-import { useRef } from 'react';
+import React, { useRef } from 'react';
+import { motion, useInView } from 'framer-motion';
 import { BookOpen, Users, Briefcase, MessageCircle, Award, Calendar } from 'lucide-react';
 
 const WhatWeDo: React.FC = () => {
   const ref = useRef(null);
-  const isInView = useInView(ref, { once: true, amount: 0.2 });
+  const isInView = useInView(ref, { once: true, amount: 0.1 });
 
   const services = [
     {
@@ -48,12 +46,12 @@ const WhatWeDo: React.FC = () => {
   ];
 
   return (
-    <section id="what-we-do" className="py-20 bg-white" ref={ref}>
-      <div className="container mx-auto px-4">
+    <section id="what-we-do" className="py-20 bg-white w-full" ref={ref}>
+      <div className="w-full max-w-7xl mx-auto px-4">
         <motion.div
           className="text-center mb-16"
           initial={{ opacity: 0, y: 30 }}
-          animate={isInView ? { opacity: 1, y: 0 } : {}}
+          animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 30 }}
           transition={{ duration: 0.8 }}
         >
           <h2 className="text-4xl md:text-5xl font-bold text-primary mb-6">What We Do</h2>
@@ -69,7 +67,7 @@ const WhatWeDo: React.FC = () => {
               key={service.title}
               className="bg-cream p-8 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 group hover:scale-105"
               initial={{ opacity: 0, y: 50 }}
-              animate={isInView ? { opacity: 1, y: 0 } : {}}
+              animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 50 }}
               transition={{ duration: 0.6, delay: index * 0.1 }}
             >
               <div className="w-16 h-16 bg-secondary rounded-full flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
@@ -85,7 +83,7 @@ const WhatWeDo: React.FC = () => {
                     key={feature}
                     className="flex items-center text-primary/70"
                     initial={{ opacity: 0, x: -20 }}
-                    animate={isInView ? { opacity: 1, x: 0 } : {}}
+                    animate={isInView ? { opacity: 1, x: 0 } : { opacity: 0, x: -20 }}
                     transition={{ duration: 0.4, delay: (index * 0.1) + (featureIndex * 0.05) + 0.3 }}
                   >
                     <div className="w-2 h-2 bg-secondary rounded-full mr-3" />
@@ -101,7 +99,7 @@ const WhatWeDo: React.FC = () => {
         <motion.div
           className="mt-16 text-center"
           initial={{ opacity: 0, y: 30 }}
-          animate={isInView ? { opacity: 1, y: 0 } : {}}
+          animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 30 }}
           transition={{ duration: 0.8, delay: 0.8 }}
         >
           <div className="bg-primary rounded-2xl p-8 md:p-12 relative overflow-hidden">
@@ -114,13 +112,14 @@ const WhatWeDo: React.FC = () => {
                 Join our community of empowered women who have successfully navigated 
                 their professional journey with our support.
               </p>
-              <motion.button
-                className="bg-secondary hover:bg-secondary-light text-white px-8 py-4 rounded-full font-semibold text-lg transition-all duration-300 transform hover:scale-105"
+              <motion.a
+                href="https://wa.me/+14037024498"
+                className="inline-block bg-secondary hover:bg-secondary-light text-white px-8 py-4 rounded-full font-semibold text-lg transition-all duration-300 transform hover:scale-105 no-underline"
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
               >
-                <a href="https://wa.me/+14037024498" className='decoration-none'>Schedule Your Consultation</a>
-              </motion.button>
+                Schedule Your Consultation
+              </motion.a>
             </div>
           </div>
         </motion.div>

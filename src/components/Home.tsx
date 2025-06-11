@@ -76,7 +76,7 @@ Connecting You to Your Future: Mentorship & Well-being, Digitally Delivered.   
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
               >
-                <span>Get Started</span>
+                <a href="https://wa.me/+14037024498">Get Started</a>
                 <ArrowRight size={20} />
               </motion.button>
               <motion.button
@@ -84,7 +84,7 @@ Connecting You to Your Future: Mentorship & Well-being, Digitally Delivered.   
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
               >
-                Learn More
+                <a href="https://wa.me/+14037024498">Learn More</a>
               </motion.button>
             </motion.div>
 

@@ -14,6 +14,144 @@ const Blog = () => {
   };
 
   const blogPosts = [
+
+    {
+  id: 'featured-nurse-ai-actionplan-2024',
+  title: 'AI & The Future of Nursing; From Resistance to Readiness: Your AI Action Plan',
+  excerpt: 'AI can be a powerful tool—but only if it starts with the real pain points nurses face on the floor. This three-step action plan empowers frontline nurses to map a time-consuming task, explore tested AI solutions, and co-design a workflow that works.',
+  content: `
+    <h2>AI & The Future of Nursing; From Resistance to Readiness: Your AI Action Plan</h2>
+    <p>Let’s close this series with something you can do right now. You don’t need an AI lab or a grant—just one shift, one routine task, and a mindset shift from resistance to readiness.</p>
+    <p><strong>Step 1: Pinpoint the pain.</strong> Choose one part of your shift that eats up your time—maybe during handoff, med pass, or patient calls. Jot down the one task that repeatedly disrupts your flow (e.g., <em>“charting vitals,” “phone triage,” “med reconciliation”</em>). No timers or tools needed—just your attention in the moment.</p>
+    <p><strong>Step 2: Browse for solutions.</strong> During a break, spend five minutes browsing a hospital newsletter, a clinical update, or a trusted digital health site. Look for one AI-driven tool already in use elsewhere—like a predictive triage bot, or a vitals trend graph that updates without clicks. Note the one feature that feels tailored to your challenge.</p>
+    <p><strong>Step 3: Loop in your team.</strong> Bring it to your next huddle. Ask: <em>“What would make you trust a machine-generated alert or assistant?”</em> Capture the answers—“I need mobile access,” “No pop-ups, please,” “We need nurse-reviewed responses”—and draft a success checklist together:</p>
+    <ul>
+      <li>Alerts must land in our current workflow tool</li>
+      <li>Bot scripts need nurse approval</li>
+      <li>A 5-minute in-service before rollout</li>
+    </ul>
+    <p>This is how real adoption begins—not with a product launch, but with curiosity, context, and co-creation. AI won’t replace your clinical instincts. It’s here to enhance them. By aligning tech with frontline reality, we turn hype into help—without losing what makes nursing human.</p>
+    <p><strong>🧭 What’s one small action you can take this week to explore AI in your work?</strong> Let’s build momentum, one shift at a time.</p>
+  `,
+  author: 'Fearless Strides',
+  date: '2025-06-27',
+  readTime: '7 min read',
+  category: 'Technology',
+  image: '/i1.jpg',
+  featured: true
+},
+
+    {
+  id: 'featured-nurse-design-table-2024',
+  title: 'AI & The Future of Nursing; Nurses Belong at the AI Design Table',
+  excerpt: 'Healthcare tech too often treats nurses as end-users instead of co-creators. But nurses bring deep insight into patient behavior, workflow realities, and cultural nuance—making them essential partners in designing safe, equitable, and effective AI tools.',
+  content: `
+    <h2>AI & The Future of Nursing; Nurses Belong at the AI Design Table</h2>
+    <p>Too often, digital health tools are built <em>for</em> nurses, not <em>with</em> us. This disconnect can lead to AI systems that overlook the very nuances that define quality care.</p>
+    <p>From my experience serving on curriculum redesign panels and mentorship boards, I know that co-creation leads to smarter solutions. The same principle must guide AI development. Nurses—especially those in diverse, high-acuity settings like oncology and palliative care—must be involved from the very beginning.</p>
+    <p>We see things others might miss: how chemo lab values evolve post-cycle four, how palliative care discussions shift in non-English-speaking families, or how pain is expressed nonverbally. When those insights shape data dictionaries, model training, and interface design, we move from tech that works in theory to solutions that truly work in practice.</p>
+    <p>Imagine an AI triage dashboard built with bedside nurses. It would:</p>
+    <ul>
+      <li>Surface culturally sensitive pain scales for nonverbal patients</li>
+      <li>Highlight advance care plans and family preferences</li>
+      <li>Use alert colors that stand out from existing monitor clutter</li>
+      <li>Track performance by ethnicity, language, and income for equity auditing</li>
+    </ul>
+    <p>In fast-paced units, these design decisions are not just helpful—they’re lifesaving.</p>
+    <p>Mentorship also plays a critical role. Pairing seasoned nurses with AI developers fosters clinical-tech fluency. These “bilingual” champions translate frontline needs into algorithm adjustments—and vice versa. That’s how we grow a future-proof pipeline of nurse-informaticists and build tools that support, not replace, our practice.</p>
+    <p>Ask yourself:</p>
+    <ul>
+      <li>Are nurses included in testing before tools go live?</li>
+      <li>Is our feedback actively shaping product updates?</li>
+      <li>Are we part of defining what data gets labeled as “normal”?</li>
+    </ul>
+    <p><strong>🧭 Have you ever been asked to co-design or review a digital health tool? Would you like to?</strong> The future of AI in nursing depends on us showing up—and being heard—at the design table.</p>
+  `,
+  author: 'Fearless Strides',
+  date: '2025-06-27',
+  readTime: '9 min read',
+  category: 'Technology',
+  image: '/i2.jpg',
+  featured: true
+},
+
+{
+  id: 'featured-nurse-ai-burnout-2024',
+  title: 'AI & The Future of Nursing; AI Burnout? Yes, It’s Real.',
+  excerpt: 'Instead of easing workloads, poorly implemented AI can flood nurses with alerts, overwhelm clinical judgment, and contribute to a silent epidemic—digital burnout. It’s time we co-design smarter, calmer systems that respect the rhythm of real patient care.',
+  content: `
+    <h2>AI & The Future of Nursing; AI Burnout? Yes, It’s Real.</h2>
+    <p>Technology should simplify care—not complicate it. Yet across many clinical settings, nurses report a growing wave of digital overload: dozens of alerts per hour, fragmented attention, and rising “alarm fatigue.”</p>
+    <p>Alarm fatigue is no minor inconvenience. It’s a documented safety hazard that arises when clinicians become desensitized to constant alerts, risking missed emergencies. Ironically, AI—designed to improve decision-making—can make this worse if alerts are poorly tuned or delivered without context.</p>
+    <p>In many ICUs, nurses face more than 200 alerts per shift, from ventilators, pumps, and monitors. Add AI-driven prompts—often without clinical nuance—and you have a recipe for paralysis. I’ve seen nurses freeze between competing alerts: a ventilator alarm vs. an AI lab order. Which one do you trust first?</p>
+    <p>We need balance, not bandwidth drain. Here’s how:</p>
+    <ul>
+      <li><strong>Co-design thresholds with nurses:</strong> Alert logic must reflect real patient acuity and staffing realities. Update them quarterly, not yearly.</li>
+      <li><strong>Tier alerts by urgency:</strong> Use sound only for life-critical events, visual cues for moderate ones, and silent logging for info-only updates. ICU pilots using this model cut noise by 60%.</li>
+      <li><strong>Consolidate alert dashboards:</strong> Stop forcing nurses to juggle 5+ screens. Aggregate monitors, pumps, and AI prompts into one view.</li>
+      <li><strong>Enable “snooze with accountability”:</strong> Let nurses pause alerts that are resolved—with audit trails—to prevent redundancy.</li>
+      <li><strong>Train AI on real response patterns:</strong> Machine learning can reduce false alerts when it adapts to patient baselines and nurse behaviors.</li>
+      <li><strong>Support—not override—clinical judgment:</strong> Every alert should be paired with context: vitals trends, last interventions, and suggested next steps—not just “Act now.”</li>
+    </ul>
+    <p>Burnout doesn’t just come from long hours—it comes from broken workflows. AI burnout is real when systems add noise, not clarity. The cure? Nurse-led co-creation, data-tuned alerts, and smart escalation logic that respects the rhythm of care.</p>
+    <p><strong>🧭 Have you faced alert overload? What helped you regain control?</strong> Let’s share what works—because the future of AI must include the lived realities of those at the bedside.</p>
+  `,
+  author: 'Fearless Strides',
+  date: '2025-06-27',
+  readTime: '8 min read',
+  category: 'Technology',
+  image: 'i6.jpg',
+  featured: true
+},
+
+    {
+  id: 'featured-nurse-data-privacy-2024',
+  title: 'AI & The Future of Nursing; Data Privacy in the AI Era: Are We Ready?',
+  excerpt: 'AI systems thrive on sensitive patient data—from genomic profiles to home-monitoring feeds. But with this power comes great responsibility. Nurses are not just caregivers; they are data stewards, legally and ethically accountable for protecting the privacy of every patient in the digital era.',
+  content: `
+    <h2>AI & The Future of Nursing; Data Privacy in the AI Era: Are We Ready?</h2>
+    <p>Every gain in AI’s clinical accuracy depends on access to more—and often more personal—patient data. Think genomic sequencing, smart home health monitors, and social determinants of health. These data points fuel better predictions, but they also heighten the risk of breaches, misuse, and patient mistrust.</p>
+    <p>Under privacy regulations like Ontario’s PHIPA and Alberta’s HIA, nurses share accountability with IT teams for safeguarding patient information. This is not a future concern—it’s a frontline issue. We must advocate for strong consent frameworks, end-to-end encryption, and anonymization by design, because <strong>trust is the foundation of care</strong>.</p>
+    <p>When breaches occur, the consequences are severe. A re‑identified record doesn’t just breach confidentiality—it can lead to discrimination, financial fraud, and loss of employment or insurance coverage. For patients from Indigenous, immigrant, or gender-diverse communities, these risks are magnified by existing inequities in care access and trust.</p>
+    <p>And it’s not just patients at risk. Nurses can face professional investigations, financial penalties, and damaged reputations. In one infamous case, the 2019 LifeLabs breach compromised the data of over 15 million Canadians—showing just how quickly public confidence in digital health can collapse.</p>
+    <p>Protecting health data is not just an IT policy—it’s a nursing imperative. It demands:</p>
+    <ul>
+      <li>Clear, culturally appropriate informed consent processes</li>
+      <li>Systems that default to encryption and role-based access</li>
+      <li>Mandatory training in digital ethics and cybersecurity</li>
+    </ul>
+    <p>When patients fear exposure, they withhold the very details—mental health symptoms, undocumented meds, or personal trauma—that nurses need to deliver safe, effective care. Breaches don’t just compromise data; they unravel relationships and disrupt clinical workflows.</p>
+    <p><strong>Safeguarding privacy is now a core nursing competency.</strong> It’s time to treat data security as essential to patient safety—not as a technical afterthought.</p>
+    <p>🧭 What kind of data privacy training should be standard for every nurse today?</p>
+  `,
+  author: 'Fearless Strides',
+  date: '2025-06-27',
+  readTime: '9 min read',
+  category: 'Technology',
+  image: 'i4.jpg',
+  featured: true
+    },
+
+    {
+  id: 'featured-nurse-ai-readiness-2024',
+  title: 'AI & The Future of Nursing; From Resistance to Readiness',
+  excerpt: 'Nurses don’t need to become data scientists—but they do need a voice in how AI tools are designed, introduced, and used in daily workflows. The first step? Translate AI hype into one practical action that solves a real pain point in your shift.',
+  content: `
+    <h2>AI & The Future of Nursing; From Resistance to Readiness</h2>
+    <p>Let’s close this series with something you can act on right now. You don’t need a degree in machine learning to bring AI into your practice—you just need to start with one small shift in your routine.</p>
+    <p>First, identify one task that slows you down every shift. Maybe it’s <strong>charting vitals</strong>, <strong>handling phone triage</strong>, or <strong>doing med reconciliations</strong>. Notice when it interrupts your flow—especially during crunch times like shift handoff or med pass.</p>
+    <p>Next, explore one AI tool that’s already in use elsewhere. Maybe it’s a chatbot that handles FAQs, or a trend graph that updates vitals without extra clicks. On your next break, take five minutes to skim a hospital newsletter, vendor handout, or trusted clinical blog. Jot down one feature that directly speaks to your need.</p>
+    <p>Finally, bring your team into the conversation. In your next huddle or meeting, ask: <em>“What would make you trust a machine-generated alert or AI assistant?”</em> Gather input—concerns like <em>“I don’t want more pop-ups”</em> or needs like <em>“I want mobile access”</em>—and turn that into a shared success checklist. For example: <strong>“Alerts must appear in our existing workflow tool”</strong> or <strong>“Bot responses must be nurse-reviewed.”</strong></p>
+    <p>AI isn’t here to replace clinical judgment—it’s here to empower it. When nurses lead the process, from identifying real-world workflow friction to shaping success criteria, AI becomes a tool for better care, not another layer of complexity.</p>
+    <p>So, what’s <strong>one micro-action</strong> you can take this week to test how AI could support your work? Let’s move from curiosity to confidence—together.</p>
+  `,
+  author: 'Fearless Strides',
+  date: '2025-06-27',
+  readTime: '7 min read',
+  category: 'Technology',
+  image: 'i5.jpg',
+  featured: true
+    },
     {
       id: 'featured-nurse-credentials-2024',
       title: 'AI & The Future of Nursing; Let\'s Talk About Algorithmic Bias',

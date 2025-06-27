@@ -113,7 +113,7 @@ const WhatWeDo: React.FC = () => {
                 their professional journey with our support.
               </p>
               <motion.a
-                href="https://wa.me/+14037024498"
+                href="https://calendly.com/lindadike2002/30min" target='_blank'
                 className="inline-block bg-secondary hover:bg-secondary-light text-white px-8 py-4 rounded-full font-semibold text-lg transition-all duration-300 transform hover:scale-105 no-underline"
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}

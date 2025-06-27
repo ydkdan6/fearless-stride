@@ -75,8 +75,8 @@ ${formData.name}
     {
       icon: MapPin,
       title: 'Visit Us',
-      info: '141 Evansdale Landing NW',
-      description: 'Calgary, AB T3P0C7'
+      info: 'Calgary, Alberta, Canada',
+      description: ''
     },
     {
       icon: Clock,

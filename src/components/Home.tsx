@@ -106,7 +106,6 @@ The Empowering Immigrant Women Team`
               </motion.h1>
               <motion.p className="text-xl md:text-2xl text-white/90 mb-8 max-w-2xl">
                 Connecting You to Your Future: Mentorship & Well-being, Digitally Delivered.
-                To get you started, enter your details to receive your licensing roadmap for IENs in alberta instantly!
               </motion.p>
               <motion.div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start mb-12">
                 <motion.button className="bg-secondary hover:bg-secondary text-white px-8 py-4 rounded-full font-semibold text-lg flex items-center justify-center space-x-2" whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>

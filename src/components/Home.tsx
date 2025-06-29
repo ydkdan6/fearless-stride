@@ -99,14 +99,14 @@ The Empowering Immigrant Women Team`
             <motion.div className="text-center lg:text-left" initial={{ opacity: 0, x: -50 }} animate={{ opacity: 1, x: 0 }} transition={{ duration: 0.8, delay: 0.2 }}>
               <motion.h1 className="text-4xl md:text-6xl lg:text-7xl font-bold text-white mb-6 leading-tight">
                 Empowering{' '}
-                <motion.span className="text-pink-300 relative">
+                <motion.span className="text-secondary relative">
                   Immigrant Women
                   <motion.div className="absolute -bottom-2 left-0 right-0 h-1 bg-pink-300" initial={{ scaleX: 0 }} animate={{ scaleX: 1 }} transition={{ duration: 0.8, delay: 1.2 }} />
                 </motion.span>
               </motion.h1>
               <motion.p className="text-xl md:text-2xl text-white/90 mb-8 max-w-2xl">
                 Connecting You to Your Future: Mentorship & Well-being, Digitally Delivered.
-                To get you started, enjoy our FREE guidebook — a helpful resource for your growth journey.
+                To get you started, enter your details to receive your licensing roadmap for IENs in alberta instantly!
               </motion.p>
               <motion.div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start mb-12">
                 <motion.button className="bg-secondary hover:bg-secondary text-white px-8 py-4 rounded-full font-semibold text-lg flex items-center justify-center space-x-2" whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
@@ -123,7 +123,7 @@ The Empowering Immigrant Women Team`
               <motion.div className="grid grid-cols-3 gap-8">
                 {stats.map((stat, index) => (
                   <motion.div key={stat.label} className="text-center">
-                    <stat.icon className="w-8 h-8 text-pink-300 mx-auto mb-2" />
+                    <stat.icon className="w-8 h-8 text-secondary mx-auto mb-2" />
                     <div className="text-2xl md:text-3xl font-bold text-white mb-1">{stat.number}</div>
                     <div className="text-white/80 text-sm">{stat.label}</div>
                   </motion.div>
@@ -133,15 +133,15 @@ The Empowering Immigrant Women Team`
 
             <motion.div className="relative">
               <motion.div className="relative rounded-2xl overflow-hidden shadow-2xl">
-                <div className="w-full h-96 md:h-[500px] bg-gradient-to-br from-pink-400 to-purple-500 flex items-center justify-center">
+                <div className="w-full h-96 md:h-[500px] bg-gradient-to-br from-secondary-400 flex items-center justify-center">
                   <img src="/image1.jpg" alt="Empowering immigrant women" className="w-full h-full object-cover" />
                 </div>
-                <div className="absolute inset-0 bg-gradient-to-t from-purple-600/60 to-transparent" />
+                <div className="absolute inset-0 bg-gradient-to-t to-transparent" />
               </motion.div>
               <motion.div className="absolute -top-6 -right-6 bg-secondary text-white p-4 rounded-full shadow-lg" animate={{ y: [-5, 5, -5] }} transition={{ duration: 3, repeat: Infinity, ease: "easeInOut" }}>
                 <Heart className="w-6 h-6" />
               </motion.div>
-              <motion.div className="absolute -bottom-6 -left-6 bg-primary text-secondary rounded-full shadow-lg" animate={{ y: [5, -5, 5] }} transition={{ duration: 3, repeat: Infinity, ease: "easeInOut", delay: 1.5 }}>
+              <motion.div className="absolute -bottom-6 -left-6 bg-white text-primary p-4 rounded-full shadow-lg" animate={{ y: [5, -5, 5] }} transition={{ duration: 3, repeat: Infinity, ease: "easeInOut", delay: 1.5 }}>
                 <Star className="w-6 h-6" />
               </motion.div>
             </motion.div>
@@ -165,7 +165,7 @@ The Empowering Immigrant Women Team`
                       <Download className="w-8 h-8 text-primary" />
                     </div>
                     <h3 className="text-2xl font-bold text-gray-800 mb-2">Get Your Free Guidebook</h3>
-                    <p className="text-gray-600">Enter your details to receive your empowerment guide instantly!</p>
+                    <p className="text-gray-600">Enter your details to receive your licensing roadmap for IENs in alberta instantly !</p>
                   </div>
                   <div className="space-y-4">
                     <div>

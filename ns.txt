@@ -1,0 +1,4 @@
+Host: server295.web-hosting.com
+SMTP Port: 465
+Username: Your full email address
+App password: Your email address's password.
